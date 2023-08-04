@@ -6,7 +6,8 @@ html {
   scroll-behavior: smooth;
 }
 
-
+body{
+background-color: transparent;}
 /*College name*/
 .heading{
 	display: inline-block;
@@ -33,11 +34,14 @@ html {
 /*Carousel*/
 .w-100 {
   max-width: 100% !important;
-  max-height: 120vh;
 }
 #carousel1{
  font-family: 'Secular One', sans-serif;
  padding-bottom: 10px;
+}
+.carousel-item{
+	width: 100%;
+	height:650px;
 }
 .carouselText{
 	padding-bottom: 75px;
@@ -53,11 +57,10 @@ html {
 
 /*about*/
 .bgimage{
-	background-image: url("C:/Users/USER/OneDrive/Desktop/Shruti/Web Development/Wdl_project/test/test12.jpg");
+  background-image: url("Images/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin:20px auto;
   display: block;
   width: 1300px;
   height: 500px;
@@ -90,6 +93,7 @@ html {
 /*Cards*/
 
 .card .card-body{
+	text-align: center;
   padding-left: 0;
 
 }
@@ -99,6 +103,7 @@ html {
 	font-weight: 550;
 }
 .card-text{
+	text-align: justify;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 17px;
 
@@ -114,10 +119,11 @@ html {
 }
 
 .card-body .btn-primary{
+	width: 100%;
 	font-family: 'Montserrat', sans-serif;
-   border-radius: 20px;
-   background-color: #232423;
-   border-color: #232423;
+   border-radius: 8px;
+   background-color: #189bd8;
+   border:none;
 
 }
 .card-body .btn-primary:hover
@@ -145,7 +151,7 @@ color: #232423;
 /*parallax effect*/
 
 .parallax{
-	background-image: url('C:/Users/USER/OneDrive/Desktop/Shruti/Web Development/Wdl_project/Images/bvcoe7.png');
+	background-image: url('Images/bvcoe7.png');
 	height: 700px;
 	background-attachment: fixed;
   background-repeat: no-repeat;
@@ -171,7 +177,7 @@ color: #232423;
 
 }
 .parallax2{
-	background-image: url('C:/Users/USER/OneDrive/Desktop/Shruti/Web Development/Wdl_project/Images/bvcoe4.png');
+	background-image: url('Images/bvcoe4.png');
 	height: 600px;
 	background-attachment: fixed;
   background-repeat: no-repeat;
@@ -183,15 +189,12 @@ color: #232423;
 
 /*What we offer*/
 
-
-
-  
-
-
-
-
-
-/*
+.rows{
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 span{
 	display:inline-block;
 	vertical-align:top;
@@ -204,7 +207,7 @@ span{
   object-fit: cover;
 
 }
-*/
+
 .icons a:link, .icons a:visited , .icons a:active {
 	padding-right: 25px;
 	color: white;
@@ -233,6 +236,7 @@ span{
 
 }
 #copyright{
+	margin-bottom: 0px;
 	padding-top: 170px;
 	color:#8a8a8a;
 	text-align: center;
